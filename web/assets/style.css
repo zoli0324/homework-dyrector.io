@@ -1,0 +1,7 @@
+#cat-content {
+  white-space: pre;
+}
+
+#cat-container {
+  display: none;
+}

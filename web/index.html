@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cats</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="bg-slate-400 rounded-xl p-8 m-16">
+      <h1 class="text-xl mb-8">Find your inner cat</h1>
+      <form id="cat-form">
+        <label>Your name to find a cat for you:</label>
+        <input
+          class="py-1 px-2 rounded-md border"
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Your name"
+        />
+        <button
+          class="px-8 py-1 rounded-md border border-gray-300 bg-slate-500"
+          type="submit"
+        >
+          Meow!
+        </button>
+      </form>
+    </div>
+
+    <div id="cat-container" class="bg-orange-400 rounded-xl p-8 m-16">
+      <h1 class="text-xl">You as a cat</h1>
+      <div id="cat-content"></div>
+    </div>
+
+    <div id="error"></div>
+    <script src="assets/script.js" async defer></script>
+  </body>
+</html>
