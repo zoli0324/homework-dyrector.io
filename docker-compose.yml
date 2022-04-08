@@ -8,3 +8,19 @@ services:
       MYSQL_USER: "${MYSQL_USER}"
       MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+
+  go:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: "${MYSQL_PORT}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+    ports:
+    - "8080:8080"  
+
+  web:
+    image: nginx:latest
