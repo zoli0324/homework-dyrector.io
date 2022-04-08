@@ -23,7 +23,10 @@ services:
     - "8080:8080"  
 
   web:
-    image: nginx:latest
+    image: nginx
+    volumes:
+    - ./web:/usr/share/nginx/html
     ports:
     - "60080:80"
+
 

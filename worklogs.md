@@ -8,3 +8,6 @@
  8: 1h 15m - Solved the problem with wait-for-it.sh
  9: 1h 17m - Add nginx to docker-compse.yaml.
 10: 1h 20m - Changing nginx port to the 60080.
+11: 1h 20m - Trying to change the nginx default folder to the frontend files.
+12: 1h 40m - Testing change the default folder in nginx.
+13: 1h 50m - Setup the volume to nginx copy the files in web folder to the nginx default folder.
