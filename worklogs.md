@@ -7,5 +7,3 @@
  7: 0h 40m - Have some issus when i build the dockerfile.(failed to initialize database)
  8: 1h 15m - Solved the problem with wait-for-it.sh
  9: 1h 17m - Add nginx to docker-compse.yaml.
-10: 1h 20m - Changing nginx port to the 60080.
-10: 1h 20m - Trying to change the nginx default folder to the frontend files.
