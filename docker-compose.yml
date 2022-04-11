@@ -25,7 +25,7 @@ services:
   web:
     image: nginx
     volumes:
-    - ./web:/usr/share/nginx/html
+    - ./web:/usr/share/nginx/html/api
     ports:
     - "60080:80"
 
